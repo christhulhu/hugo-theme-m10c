@@ -1,0 +1,13 @@
+{{ define "main" }}
+    {{ if .Site.Params.homepage }}
+        {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.homepage) }}
+        {{ range $paginator.Pages }}
+        <div class="post">
+            <div class="post__content">
+                <h1>{{ upper .Title }}</h1>
+                <p>{{ .Content | markdownify }}</p>
+            </div>
+        </div>
+        {{ end }}
+    {{ end }}
+{{ end }}
