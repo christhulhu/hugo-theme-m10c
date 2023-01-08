@@ -1,0 +1,50 @@
+.year {
+    color: $lightest-color;
+}
+
+.h4 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: $primary-color;
+    float: left;
+}
+
+.milestones {
+    list-style: none;
+    .milestone {
+        margin-bottom: 2em;
+    }
+}
+
+.ms-roles {
+    float: right; 
+    padding: 0.4em;
+    .pill {
+        line-height: 1.5em;
+        border: solid 1px $darkest-color;
+        border-radius: 0.4em;
+        background-color: $darkest-color;
+        color: $light-color;
+        padding: 0.25em;
+        margin: 0.2em;
+    }
+}
+
+.ms-duration {
+    clear: both;
+    font-size: 0.7em;
+    border: solid 1px $light-color;
+    border-radius: 0.4em;
+    background-color: $light-color;
+    padding: 0.1em;
+    color: $dark-color;
+    display: block;
+}
+
+.card {
+
+    .card-text {
+        clear: both;
+    }
+}
